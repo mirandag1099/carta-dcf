@@ -76,5 +76,24 @@ export const extractFinancialsFromPdf = createServerFn({ method: "POST" })
       warnings: f.warnings,
       validation: f.validation,
       historical: f.historical,
+      // Already-extracted balance sheet (latest actual year) — surfaced so the
+      // analyst can verify the cash & equity that feed the bridge/weights.
+      balanceSheet: {
+        year: f.anchorYear,
+        cash: f.cash,
+        shortTermDebt: f.shortTermDebt,
+        longTermDebt: f.longTermDebt,
+        currentAssets: f.currentAssets,
+        nonCurrentAssets: f.nonCurrentAssets,
+        totalAssets: f.totalAssets,
+        currentLiabilities: f.currentLiabilities,
+        nonCurrentLiabilities: f.nonCurrentLiabilities,
+        totalLiabilities: f.totalLiabilities,
+        commonStock: f.commonStock,
+        seriesSeed: f.seriesSeed,
+        seriesA: f.seriesA,
+        retainedEarnings: f.retainedEarnings,
+        totalEquity: f.totalEquity,
+      },
     };
   });

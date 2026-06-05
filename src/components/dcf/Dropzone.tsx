@@ -2,10 +2,10 @@ import { useCallback, useState } from "react";
 import { Upload, FileText, AlertCircle, Loader2 } from "lucide-react";
 import { useServerFn } from "@tanstack/react-start";
 import { Button } from "@/components/ui/button";
-import { buildSampleInputs } from "@/lib/dcf/parser";
+import { buildSampleInputs, buildSampleBalanceSheet } from "@/lib/dcf/parser";
 import { extractFinancialsFromPdf } from "@/lib/dcf/extractFromPdf.functions";
 import { HeroBackground } from "./HeroBackground";
-import type { HistoricalYear, ParsedInputs } from "@/lib/dcf/engine";
+import type { BalanceSheetSnapshot, HistoricalYear, ParsedInputs } from "@/lib/dcf/engine";
 import type { ValidationCheck } from "@/lib/dcf/validate";
 
 export interface LoadedResult {
@@ -14,6 +14,7 @@ export interface LoadedResult {
   warnings: string[];
   validation: ValidationCheck[];
   historical: HistoricalYear[];
+  balanceSheet: BalanceSheetSnapshot | null;
 }
 
 interface Props {
@@ -66,6 +67,7 @@ export function Dropzone({ onLoaded }: Props) {
           warnings: result.warnings ?? [],
           validation: result.validation ?? [],
           historical: result.historical ?? [],
+          balanceSheet: result.balanceSheet ?? null,
         });
       } catch (e) {
         setError((e as Error).message || "Extraction failed.");
@@ -143,6 +145,7 @@ export function Dropzone({ onLoaded }: Props) {
                   warnings: [],
                   validation: [],
                   historical: [],
+                  balanceSheet: buildSampleBalanceSheet(),
                 });
               }}
             >

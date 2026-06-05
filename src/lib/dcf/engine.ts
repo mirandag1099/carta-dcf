@@ -65,6 +65,26 @@ export interface HistoricalYear {
   changeNwc: number;
 }
 
+// The latest-actual balance sheet the model uses for the equity bridge and WACC
+// weights — surfaced read-only so the analyst can verify cash & equity.
+export interface BalanceSheetSnapshot {
+  year: number;
+  cash: number;
+  shortTermDebt: number;
+  longTermDebt: number;
+  currentAssets: number;
+  nonCurrentAssets: number;
+  totalAssets: number;
+  currentLiabilities: number;
+  nonCurrentLiabilities: number;
+  totalLiabilities: number;
+  commonStock: number;
+  seriesSeed: number;
+  seriesA: number;
+  retainedEarnings: number;
+  totalEquity: number;
+}
+
 export interface Assumptions {
   // Forecast drivers — analyst inputs; null until entered (gate the forecast).
   revenueGrowth: number | null;

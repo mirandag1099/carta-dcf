@@ -1,5 +1,5 @@
 import * as XLSX from "xlsx";
-import type { ParsedInputs } from "./engine";
+import type { BalanceSheetSnapshot, ParsedInputs } from "./engine";
 
 export interface ValidationError {
   sheet: string;
@@ -209,6 +209,29 @@ export function buildSampleInputs(): ParsedInputs {
     cash: 59.05,
     shortTermDebt: 1.03,
     longTermDebt: 0.5,
+    totalEquity: 97.71,
+  };
+}
+
+// FY2024 balance sheet from the workbook (the year the sample's bridge uses),
+// so the "Try sample data" card is populated and ties out
+// (Assets 102.12 = Liabilities 4.41 + Equity 97.71).
+export function buildSampleBalanceSheet(): BalanceSheetSnapshot {
+  return {
+    year: 2024,
+    cash: 59.05,
+    shortTermDebt: 1.03,
+    longTermDebt: 0.5,
+    currentAssets: 72.12,
+    nonCurrentAssets: 30,
+    totalAssets: 102.12,
+    currentLiabilities: 3.91,
+    nonCurrentLiabilities: 0.5,
+    totalLiabilities: 4.41,
+    commonStock: 25,
+    seriesSeed: 5,
+    seriesA: 10,
+    retainedEarnings: 57.71,
     totalEquity: 97.71,
   };
 }

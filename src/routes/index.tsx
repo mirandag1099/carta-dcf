@@ -6,6 +6,7 @@ import { Header, KpiCards, MetaRow } from "@/components/dcf/Header";
 import { AssumptionsSidebar } from "@/components/dcf/AssumptionsSidebar";
 import { ValidationPanel } from "@/components/dcf/ValidationPanel";
 import { HistoricalPanel } from "@/components/dcf/HistoricalPanel";
+import { BalanceSheetPanel } from "@/components/dcf/BalanceSheetPanel";
 import { ForecastTable } from "@/components/dcf/ForecastTable";
 import { WaccBuildup } from "@/components/dcf/WaccBuildup";
 import { DcfComparison } from "@/components/dcf/DcfComparison";
@@ -115,14 +116,17 @@ function Index() {
               output={output}
             />
           </div>
+          <div data-pdf-section>
+            <KpiCards output={output} />
+          </div>
           {meta?.historical && meta.historical.length > 0 && (
             <div data-pdf-section>
               <HistoricalPanel historical={meta.historical} />
             </div>
           )}
-          <div data-pdf-section>
-            <KpiCards output={output} />
-          </div>
+          {meta?.balanceSheet && (
+            <BalanceSheetPanel snapshot={meta.balanceSheet} />
+          )}
           <div data-pdf-section>
             <ForecastTable output={output} inputs={inputs} />
           </div>
