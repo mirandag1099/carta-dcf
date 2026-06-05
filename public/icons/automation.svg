@@ -1,0 +1,15 @@
+<svg width="128" height="106" viewBox="0 0 128 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="73.3235" height="73.3235" transform="matrix(0.866025 0.5 -0.866025 0.5 63.933 25.9834)" fill="white" stroke="#1A1A1A" stroke-linejoin="bevel"/>
+<rect width="73.3235" height="5.33909" transform="matrix(0.866025 0.5 0 1 0.433014 62.645)" fill="white" stroke="#1A1A1A" stroke-linejoin="bevel"/>
+<rect width="73.3235" height="5.33909" transform="matrix(0.866025 -0.5 0 1 63.933 99.3066)" fill="white" stroke="#1A1A1A" stroke-linejoin="bevel"/>
+<rect width="36.0483" height="36.0483" transform="matrix(0.866025 0.5 -0.866025 0.5 64.2187 6.93896)" fill="white" stroke="#1A1A1A" stroke-linejoin="bevel"/>
+<rect width="36.0483" height="36.0483" transform="matrix(0.866025 0.5 0 1 32.9998 24.9634)" fill="white" stroke="#1A1A1A" stroke-linejoin="bevel"/>
+<rect width="36.0483" height="36.0483" transform="matrix(0.866025 -0.5 0 1 64.2187 42.9873)" fill="white" stroke="#1A1A1A" stroke-linejoin="bevel"/>
+<circle cx="64.1818" cy="6.93931" r="6.43931" fill="white" stroke="#1A1A1A"/>
+<circle cx="64.1818" cy="42.9876" r="6.43931" fill="#FF7D55" stroke="#1A1A1A"/>
+<circle cx="64.1818" cy="79.036" r="6.43931" fill="white" stroke="#1A1A1A"/>
+<circle cx="95.4536" cy="24.9637" r="6.43931" fill="white" stroke="#1A1A1A"/>
+<circle cx="95.4536" cy="61.0116" r="6.43931" fill="white" stroke="#1A1A1A"/>
+<circle cx="32.9999" cy="24.9637" r="6.43931" fill="white" stroke="#1A1A1A"/>
+<circle cx="32.9999" cy="61.0116" r="6.43931" fill="white" stroke="#1A1A1A"/>
+</svg>

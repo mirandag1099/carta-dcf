@@ -1,0 +1,153 @@
+/* Libre Caslon Text (Carta's brand serif) is loaded via <link> in __root.tsx;
+   it's used for headings and falls back to Georgia/serif if unavailable. */
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Libre Caslon Text", Georgia, "Times New Roman", serif;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-hairline: var(--hairline);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ink: var(--ink);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0.75rem;
+  /* Carta brand palette — black #1a1a1a, orange #ee835f, white #ffffff.
+     Neutral grays (borders, muted text, app background) stay subtle. */
+  --background: oklch(0.985 0.001 248);          /* near-white app bg */
+  --foreground: #1a1a1a;
+  --ink: #1a1a1a;
+  --surface: #ffffff;
+  --card: #ffffff;
+  --card-foreground: #1a1a1a;
+  --popover: #ffffff;
+  --popover-foreground: #1a1a1a;
+  --primary: #1a1a1a;
+  --primary-foreground: #ffffff;
+  --secondary: oklch(0.96 0.003 247);
+  --secondary-foreground: #1a1a1a;
+  --muted: oklch(0.96 0.003 247);
+  --muted-foreground: oklch(0.52 0.012 247);      /* #6B7682 secondary text */
+  --accent: #ee835f;                              /* Carta orange */
+  --accent-foreground: #1a1a1a;                   /* black reads on the orange */
+  --destructive: oklch(0.55 0.21 27);
+  --destructive-foreground: #ffffff;
+  --border: oklch(0.925 0.004 248);               /* #E3E6E9 hairline */
+  --hairline: oklch(0.925 0.004 248);
+  --input: oklch(0.925 0.004 248);
+  --ring: #ee835f;
+  --chart-1: #1a1a1a;
+  --chart-2: oklch(0.52 0.012 247);
+  --chart-3: oklch(0.78 0.008 247);
+  --chart-4: #ee835f;
+  --chart-5: oklch(0.4 0.03 247);
+  --sidebar: #ffffff;
+  --sidebar-foreground: #1a1a1a;
+  --sidebar-primary: #1a1a1a;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: oklch(0.96 0.003 247);
+  --sidebar-accent-foreground: #1a1a1a;
+  --sidebar-border: oklch(0.925 0.004 248);
+  --sidebar-ring: #ee835f;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html, body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: "cv11", "ss01", "ss03";
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Brand serif for display headings; body and data stay in the sans face. */
+  h1, h2 {
+    font-family: var(--font-serif);
+  }
+
+  .tabular {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+  }
+
+  /* Keep horizontal scrolling on tables but never paint the scrollbar — keeps
+     the PDF export (and the UI) clean. */
+  .no-scrollbar {
+    scrollbar-width: none;            /* Firefox */
+    -ms-overflow-style: none;         /* old Edge */
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;                    /* Chrome / Safari */
+  }
+}
+
+/* Landing-page hero: slowly drifting Carta icons in the background. */
+@keyframes heroDriftA {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+  50% { transform: translate3d(18px, -28px, 0) rotate(5deg); }
+}
+@keyframes heroDriftB {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+  50% { transform: translate3d(-24px, -18px, 0) rotate(-6deg); }
+}
+@keyframes heroDriftC {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+  50% { transform: translate3d(16px, 24px, 0) rotate(4deg); }
+}
+@keyframes heroFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-24px); }
+}
+
+.hero-icon {
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-icon { animation: none !important; }
+}

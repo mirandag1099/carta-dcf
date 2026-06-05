@@ -1,0 +1,23 @@
+<svg width="128" height="124" viewBox="0 0 128 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="73.3199" height="73.3199" transform="matrix(0.866025 0.5 -0.866025 0.5 63.9299 44.1318)" fill="white" stroke="#1A1A1A" stroke-linejoin="bevel"/>
+<rect width="73.3199" height="5.33883" transform="matrix(0.866025 0.5 0 1 0.433014 80.792)" fill="white" stroke="#1A1A1A" stroke-linejoin="bevel"/>
+<rect width="73.3199" height="5.33883" transform="matrix(0.866025 -0.5 0 1 63.9299 117.452)" fill="white" stroke="#1A1A1A" stroke-linejoin="bevel"/>
+<rect width="17.7356" height="17.7356" transform="matrix(0.866025 0.5 -0.866025 0.5 33.1916 35.4629)" fill="white" stroke="#1A1A1A" stroke-linejoin="bevel"/>
+<rect width="17.7356" height="17.7356" transform="matrix(0.866025 -0.5 0 1 33.1916 53.1982)" fill="white" stroke="#1A1A1A" stroke-linejoin="bevel"/>
+<rect width="17.7356" height="17.7356" transform="matrix(0.866025 0.5 -0.866025 0.5 48.5472 26.5957)" fill="white" stroke="#1A1A1A" stroke-linejoin="bevel"/>
+<rect width="17.7356" height="53.2067" transform="matrix(0.866025 -0.5 0 1 48.5472 44.3311)" fill="white" stroke="#1A1A1A" stroke-linejoin="bevel"/>
+<rect width="17.7356" height="17.7356" transform="matrix(0.866025 0.5 -0.866025 0.5 63.9339 53.1982)" fill="white" stroke="#1A1A1A" stroke-linejoin="bevel"/>
+<rect width="17.7356" height="17.7356" transform="matrix(0.866025 -0.5 0 1 63.9339 70.9336)" fill="white" stroke="#1A1A1A" stroke-linejoin="bevel"/>
+<path d="M33.1819 35.4651V53.1974L17.8282 44.3329V62.0685L33.1819 70.933V88.6718L48.5414 97.5396V79.7876L63.9292 88.6718V70.9362L48.5414 62.052V44.3329L33.1819 35.4651Z" fill="white" stroke="#1A1A1A" stroke-linejoin="bevel"/>
+<rect width="17.7356" height="17.7356" transform="matrix(-0.866025 0.5 0.866025 0.5 94.6723 35.4629)" fill="white" stroke="#1A1A1A" stroke-linejoin="bevel"/>
+<rect width="17.7356" height="17.7356" transform="matrix(-0.866025 -0.5 0 1 94.6723 53.1982)" fill="white" stroke="#1A1A1A" stroke-linejoin="bevel"/>
+<rect width="17.7356" height="17.7356" transform="matrix(-0.866025 0.5 0.866025 0.5 79.3205 26.5957)" fill="white" stroke="#1A1A1A" stroke-linejoin="bevel"/>
+<rect width="17.7356" height="53.2067" transform="matrix(-0.866025 -0.5 0 1 79.3205 44.3311)" fill="white" stroke="#1A1A1A" stroke-linejoin="bevel"/>
+<rect width="17.7356" height="17.7356" transform="matrix(-0.866025 0.5 0.866025 0.5 63.9339 53.1982)" fill="#FF7D55" stroke="#1A1A1A" stroke-linejoin="bevel"/>
+<path d="M94.678 35.4651V53.1974L110.032 44.3329V62.0685L94.678 70.933V88.6718L79.3186 97.5396V79.7876L63.9308 88.6718V70.9362L79.3186 62.052V44.3329L94.678 35.4651Z" fill="white" stroke="#1A1A1A" stroke-linejoin="bevel"/>
+<rect width="17.7356" height="17.7356" transform="matrix(0.866025 0.5 5.56119e-08 -1 33.1916 35.4707)" fill="white" stroke="#1A1A1A" stroke-linejoin="bevel"/>
+<rect width="17.7356" height="17.7356" transform="matrix(-5.56119e-08 1 0.866025 -0.5 48.5472 26.6035)" fill="white" stroke="#1A1A1A" stroke-linejoin="bevel"/>
+<rect width="17.7356" height="53.2067" transform="matrix(-5.56119e-08 1 0.866025 -0.5 48.5472 44.334)" fill="white" stroke="#1A1A1A" stroke-linejoin="bevel"/>
+<rect width="17.7356" height="17.7356" transform="matrix(0.866025 0.5 5.56119e-08 -1 63.9145 53.2256)" fill="white" stroke="#1A1A1A" stroke-linejoin="bevel"/>
+<path d="M63.8944 35.4762L48.5492 44.3358L33.1897 35.468L48.5463 26.6019L33.1925 17.7374L48.552 8.86958L63.9058 17.7341L79.2681 8.86468L94.6275 17.7325L79.2538 26.6085L94.6417 35.4926L79.2822 44.3604L63.8944 35.4762Z" fill="white" stroke="#1A1A1A" stroke-linejoin="bevel"/>
+</svg>
